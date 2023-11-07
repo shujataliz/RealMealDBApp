@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50E5DE982AF9728D005FA64B /* RealMealDbAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DE972AF9728D005FA64B /* RealMealDbAppApp.swift */; };
+		50E5DE9A2AF9728D005FA64B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DE992AF9728D005FA64B /* ContentView.swift */; };
+		50E5DE9C2AF9728F005FA64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E5DE9B2AF9728F005FA64B /* Assets.xcassets */; };
+		50E5DE9F2AF9728F005FA64B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E5DE9E2AF9728F005FA64B /* Preview Assets.xcassets */; };
+		50E5DEA92AF9728F005FA64B /* RealMealDbAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DEA82AF9728F005FA64B /* RealMealDbAppTests.swift */; };
+		50E5DEB32AF9728F005FA64B /* RealMealDbAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DEB22AF9728F005FA64B /* RealMealDbAppUITests.swift */; };
+		50E5DEB52AF9728F005FA64B /* RealMealDbAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DEB42AF9728F005FA64B /* RealMealDbAppUITestsLaunchTests.swift */; };
+		50E5DEC82AF972E7005FA64B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DEC72AF972E7005FA64B /* ApiManager.swift */; };
+		50E5DECD2AF9731D005FA64B /* ApiClientAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DECC2AF9731D005FA64B /* ApiClientAdapter.swift */; };
+		50E5DECF2AF97413005FA64B /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DECE2AF97413005FA64B /* Meals.swift */; };
+		50E5DF0B2AF9E426005FA64B /* libApiManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E5DEC52AF972E7005FA64B /* libApiManager.a */; };
+		50E5DF122AF9E4A8005FA64B /* desert.json in Resources */ = {isa = PBXBuildFile; fileRef = 50E5DF112AF9E4A8005FA64B /* desert.json */; };
+		50E5DF142AF9E4C9005FA64B /* desert_detail.json in Resources */ = {isa = PBXBuildFile; fileRef = 50E5DF132AF9E4C9005FA64B /* desert_detail.json */; };
+		50E5DF152AF9E6E6005FA64B /* libApiManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E5DEC52AF972E7005FA64B /* libApiManager.a */; };
+		50E5DF192AF9E98E005FA64B /* MealDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DF182AF9E98E005FA64B /* MealDetailItem.swift */; };
+		50E5DF1B2AFA023D005FA64B /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DF1A2AFA023D005FA64B /* MealListView.swift */; };
+		50E5DF1D2AFA076E005FA64B /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DF1C2AFA076E005FA64B /* MealDetailView.swift */; };
+		50E5DF1F2AFA1FDD005FA64B /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DF1E2AFA1FDD005FA64B /* MealDetailViewModel.swift */; };
+		50E5DF222AFA25BC005FA64B /* MealsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5DF212AFA25BC005FA64B /* MealsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50E5DEA52AF9728F005FA64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50E5DE8C2AF9728D005FA64B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50E5DE932AF9728D005FA64B;
+			remoteInfo = RealMealDbApp;
+		};
+		50E5DEAF2AF9728F005FA64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50E5DE8C2AF9728D005FA64B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50E5DE932AF9728D005FA64B;
+			remoteInfo = RealMealDbApp;
+		};
+		50E5DF0C2AF9E426005FA64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50E5DE8C2AF9728D005FA64B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50E5DEC42AF972E7005FA64B;
+			remoteInfo = ApiManager;
+		};
+		50E5DF162AF9E6E6005FA64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50E5DE8C2AF9728D005FA64B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50E5DEC42AF972E7005FA64B;
+			remoteInfo = ApiManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50E5DEC32AF972E7005FA64B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		50E5DE942AF9728D005FA64B /* RealMealDbApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealMealDbApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E5DE972AF9728D005FA64B /* RealMealDbAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealMealDbAppApp.swift; sourceTree = "<group>"; };
+		50E5DE992AF9728D005FA64B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50E5DE9B2AF9728F005FA64B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50E5DE9E2AF9728F005FA64B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50E5DEA42AF9728F005FA64B /* RealMealDbAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealMealDbAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E5DEA82AF9728F005FA64B /* RealMealDbAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealMealDbAppTests.swift; sourceTree = "<group>"; };
+		50E5DEAE2AF9728F005FA64B /* RealMealDbAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealMealDbAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E5DEB22AF9728F005FA64B /* RealMealDbAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealMealDbAppUITests.swift; sourceTree = "<group>"; };
+		50E5DEB42AF9728F005FA64B /* RealMealDbAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealMealDbAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50E5DEC52AF972E7005FA64B /* libApiManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libApiManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E5DEC72AF972E7005FA64B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		50E5DECC2AF9731D005FA64B /* ApiClientAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientAdapter.swift; sourceTree = "<group>"; };
+		50E5DECE2AF97413005FA64B /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
+		50E5DF112AF9E4A8005FA64B /* desert.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = desert.json; sourceTree = "<group>"; };
+		50E5DF132AF9E4C9005FA64B /* desert_detail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = desert_detail.json; sourceTree = "<group>"; };
+		50E5DF182AF9E98E005FA64B /* MealDetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailItem.swift; sourceTree = "<group>"; };
+		50E5DF1A2AFA023D005FA64B /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
+		50E5DF1C2AFA076E005FA64B /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		50E5DF1E2AFA1FDD005FA64B /* MealDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
+		50E5DF212AFA25BC005FA64B /* MealsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50E5DE912AF9728D005FA64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E5DF0B2AF9E426005FA64B /* libApiManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E5DEA12AF9728F005FA64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E5DF152AF9E6E6005FA64B /* libApiManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E5DEAB2AF9728F005FA64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E5DEC22AF972E7005FA64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50E5DE8B2AF9728D005FA64B = {
+			isa = PBXGroup;
+			children = (
+				50E5DE962AF9728D005FA64B /* RealMealDbApp */,
+				50E5DEA72AF9728F005FA64B /* RealMealDbAppTests */,
+				50E5DEB12AF9728F005FA64B /* RealMealDbAppUITests */,
+				50E5DEC62AF972E7005FA64B /* ApiManager */,
+				50E5DE952AF9728D005FA64B /* Products */,
+				50E5DF0A2AF9E426005FA64B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		50E5DE952AF9728D005FA64B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50E5DE942AF9728D005FA64B /* RealMealDbApp.app */,
+				50E5DEA42AF9728F005FA64B /* RealMealDbAppTests.xctest */,
+				50E5DEAE2AF9728F005FA64B /* RealMealDbAppUITests.xctest */,
+				50E5DEC52AF972E7005FA64B /* libApiManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50E5DE962AF9728D005FA64B /* RealMealDbApp */ = {
+			isa = PBXGroup;
+			children = (
+				50E5DE972AF9728D005FA64B /* RealMealDbAppApp.swift */,
+				50E5DE992AF9728D005FA64B /* ContentView.swift */,
+				50E5DF232AFA25C3005FA64B /* MealLists */,
+				50E5DF202AFA1FE6005FA64B /* MealDetail */,
+				50E5DE9B2AF9728F005FA64B /* Assets.xcassets */,
+				50E5DE9D2AF9728F005FA64B /* Preview Content */,
+			);
+			path = RealMealDbApp;
+			sourceTree = "<group>";
+		};
+		50E5DE9D2AF9728F005FA64B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				50E5DE9E2AF9728F005FA64B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50E5DEA72AF9728F005FA64B /* RealMealDbAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				50E5DF112AF9E4A8005FA64B /* desert.json */,
+				50E5DF132AF9E4C9005FA64B /* desert_detail.json */,
+				50E5DEA82AF9728F005FA64B /* RealMealDbAppTests.swift */,
+			);
+			path = RealMealDbAppTests;
+			sourceTree = "<group>";
+		};
+		50E5DEB12AF9728F005FA64B /* RealMealDbAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50E5DEB22AF9728F005FA64B /* RealMealDbAppUITests.swift */,
+				50E5DEB42AF9728F005FA64B /* RealMealDbAppUITestsLaunchTests.swift */,
+			);
+			path = RealMealDbAppUITests;
+			sourceTree = "<group>";
+		};
+		50E5DEC62AF972E7005FA64B /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				50E5DEC72AF972E7005FA64B /* ApiManager.swift */,
+				50E5DECC2AF9731D005FA64B /* ApiClientAdapter.swift */,
+				50E5DECE2AF97413005FA64B /* Meals.swift */,
+				50E5DF182AF9E98E005FA64B /* MealDetailItem.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		50E5DF0A2AF9E426005FA64B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50E5DF202AFA1FE6005FA64B /* MealDetail */ = {
+			isa = PBXGroup;
+			children = (
+				50E5DF1E2AFA1FDD005FA64B /* MealDetailViewModel.swift */,
+				50E5DF1C2AFA076E005FA64B /* MealDetailView.swift */,
+			);
+			path = MealDetail;
+			sourceTree = "<group>";
+		};
+		50E5DF232AFA25C3005FA64B /* MealLists */ = {
+			isa = PBXGroup;
+			children = (
+				50E5DF212AFA25BC005FA64B /* MealsViewModel.swift */,
+				50E5DF1A2AFA023D005FA64B /* MealListView.swift */,
+			);
+			path = MealLists;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50E5DE932AF9728D005FA64B /* RealMealDbApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E5DEB82AF9728F005FA64B /* Build configuration list for PBXNativeTarget "RealMealDbApp" */;
+			buildPhases = (
+				50E5DE902AF9728D005FA64B /* Sources */,
+				50E5DE912AF9728D005FA64B /* Frameworks */,
+				50E5DE922AF9728D005FA64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50E5DF0D2AF9E426005FA64B /* PBXTargetDependency */,
+			);
+			name = RealMealDbApp;
+			productName = RealMealDbApp;
+			productReference = 50E5DE942AF9728D005FA64B /* RealMealDbApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50E5DEA32AF9728F005FA64B /* RealMealDbAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E5DEBB2AF9728F005FA64B /* Build configuration list for PBXNativeTarget "RealMealDbAppTests" */;
+			buildPhases = (
+				50E5DEA02AF9728F005FA64B /* Sources */,
+				50E5DEA12AF9728F005FA64B /* Frameworks */,
+				50E5DEA22AF9728F005FA64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50E5DEA62AF9728F005FA64B /* PBXTargetDependency */,
+				50E5DF172AF9E6E6005FA64B /* PBXTargetDependency */,
+			);
+			name = RealMealDbAppTests;
+			productName = RealMealDbAppTests;
+			productReference = 50E5DEA42AF9728F005FA64B /* RealMealDbAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50E5DEAD2AF9728F005FA64B /* RealMealDbAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E5DEBE2AF9728F005FA64B /* Build configuration list for PBXNativeTarget "RealMealDbAppUITests" */;
+			buildPhases = (
+				50E5DEAA2AF9728F005FA64B /* Sources */,
+				50E5DEAB2AF9728F005FA64B /* Frameworks */,
+				50E5DEAC2AF9728F005FA64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50E5DEB02AF9728F005FA64B /* PBXTargetDependency */,
+			);
+			name = RealMealDbAppUITests;
+			productName = RealMealDbAppUITests;
+			productReference = 50E5DEAE2AF9728F005FA64B /* RealMealDbAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		50E5DEC42AF972E7005FA64B /* ApiManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E5DEC92AF972E7005FA64B /* Build configuration list for PBXNativeTarget "ApiManager" */;
+			buildPhases = (
+				50E5DEC12AF972E7005FA64B /* Sources */,
+				50E5DEC22AF972E7005FA64B /* Frameworks */,
+				50E5DEC32AF972E7005FA64B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApiManager;
+			productName = ApiManager;
+			productReference = 50E5DEC52AF972E7005FA64B /* libApiManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50E5DE8C2AF9728D005FA64B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					50E5DE932AF9728D005FA64B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					50E5DEA32AF9728F005FA64B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					50E5DEAD2AF9728F005FA64B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 50E5DE932AF9728D005FA64B;
+					};
+					50E5DEC42AF972E7005FA64B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 50E5DE8F2AF9728D005FA64B /* Build configuration list for PBXProject "RealMealDbApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50E5DE8B2AF9728D005FA64B;
+			productRefGroup = 50E5DE952AF9728D005FA64B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50E5DE932AF9728D005FA64B /* RealMealDbApp */,
+				50E5DEA32AF9728F005FA64B /* RealMealDbAppTests */,
+				50E5DEAD2AF9728F005FA64B /* RealMealDbAppUITests */,
+				50E5DEC42AF972E7005FA64B /* ApiManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50E5DE922AF9728D005FA64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E5DE9F2AF9728F005FA64B /* Preview Assets.xcassets in Resources */,
+				50E5DE9C2AF9728F005FA64B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E5DEA22AF9728F005FA64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E5DF122AF9E4A8005FA64B /* desert.json in Resources */,
+				50E5DF142AF9E4C9005FA64B /* desert_detail.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E5DEAC2AF9728F005FA64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50E5DE902AF9728D005FA64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E5DF1D2AFA076E005FA64B /* MealDetailView.swift in Sources */,
+				50E5DE9A2AF9728D005FA64B /* ContentView.swift in Sources */,
+				50E5DE982AF9728D005FA64B /* RealMealDbAppApp.swift in Sources */,
+				50E5DF1F2AFA1FDD005FA64B /* MealDetailViewModel.swift in Sources */,
+				50E5DF1B2AFA023D005FA64B /* MealListView.swift in Sources */,
+				50E5DF222AFA25BC005FA64B /* MealsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E5DEA02AF9728F005FA64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E5DEA92AF9728F005FA64B /* RealMealDbAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E5DEAA2AF9728F005FA64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E5DEB32AF9728F005FA64B /* RealMealDbAppUITests.swift in Sources */,
+				50E5DEB52AF9728F005FA64B /* RealMealDbAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E5DEC12AF972E7005FA64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E5DF192AF9E98E005FA64B /* MealDetailItem.swift in Sources */,
+				50E5DECF2AF97413005FA64B /* Meals.swift in Sources */,
+				50E5DEC82AF972E7005FA64B /* ApiManager.swift in Sources */,
+				50E5DECD2AF9731D005FA64B /* ApiClientAdapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50E5DEA62AF9728F005FA64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50E5DE932AF9728D005FA64B /* RealMealDbApp */;
+			targetProxy = 50E5DEA52AF9728F005FA64B /* PBXContainerItemProxy */;
+		};
+		50E5DEB02AF9728F005FA64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50E5DE932AF9728D005FA64B /* RealMealDbApp */;
+			targetProxy = 50E5DEAF2AF9728F005FA64B /* PBXContainerItemProxy */;
+		};
+		50E5DF0D2AF9E426005FA64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50E5DEC42AF972E7005FA64B /* ApiManager */;
+			targetProxy = 50E5DF0C2AF9E426005FA64B /* PBXContainerItemProxy */;
+		};
+		50E5DF172AF9E6E6005FA64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50E5DEC42AF972E7005FA64B /* ApiManager */;
+			targetProxy = 50E5DF162AF9E6E6005FA64B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50E5DEB62AF9728F005FA64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50E5DEB72AF9728F005FA64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50E5DEB92AF9728F005FA64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RealMealDbApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shujat.RealMealDbApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50E5DEBA2AF9728F005FA64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RealMealDbApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shujat.RealMealDbApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50E5DEBC2AF9728F005FA64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shujat.RealMealDbAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50E5DEBD2AF9728F005FA64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shujat.RealMealDbAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50E5DEBF2AF9728F005FA64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shujat.RealMealDbAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RealMealDbApp;
+			};
+			name = Debug;
+		};
+		50E5DEC02AF9728F005FA64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shujat.RealMealDbAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RealMealDbApp;
+			};
+			name = Release;
+		};
+		50E5DECA2AF972E7005FA64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50E5DECB2AF972E7005FA64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50E5DE8F2AF9728D005FA64B /* Build configuration list for PBXProject "RealMealDbApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E5DEB62AF9728F005FA64B /* Debug */,
+				50E5DEB72AF9728F005FA64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50E5DEB82AF9728F005FA64B /* Build configuration list for PBXNativeTarget "RealMealDbApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E5DEB92AF9728F005FA64B /* Debug */,
+				50E5DEBA2AF9728F005FA64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50E5DEBB2AF9728F005FA64B /* Build configuration list for PBXNativeTarget "RealMealDbAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E5DEBC2AF9728F005FA64B /* Debug */,
+				50E5DEBD2AF9728F005FA64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50E5DEBE2AF9728F005FA64B /* Build configuration list for PBXNativeTarget "RealMealDbAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E5DEBF2AF9728F005FA64B /* Debug */,
+				50E5DEC02AF9728F005FA64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50E5DEC92AF972E7005FA64B /* Build configuration list for PBXNativeTarget "ApiManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E5DECA2AF972E7005FA64B /* Debug */,
+				50E5DECB2AF972E7005FA64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50E5DE8C2AF9728D005FA64B /* Project object */;
+}
